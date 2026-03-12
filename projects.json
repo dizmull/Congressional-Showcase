@@ -1,17 +1,17 @@
 [
   {
-    "slug": "jane-doe",
+    "slug": "DC-AL",
     "name": "Jane Doe",
     "appName": "EcoTracker",
     "description": "An app that helps students track and reduce their school's carbon footprint through gamified challenges.",
-    "thumbnail": "sites/jane-doe/thumbnail.png",
+    "thumbnail": "sites/DC-AL/thumbnail.png",
     "location": { "lat": 38.9072, "lng": -77.0369, "label": "Washington, DC" },
     "district": "DC-AL",
     "state": "DC",
     "tags": ["environment", "education"]
   },
   {
-    "slug": "marcus-chen",
+    "slug": "CA-11",
     "name": "Marcus Chen",
     "appName": "BusWhere",
     "description": "Real-time school bus tracking so parents and students always know when the bus is coming.",
@@ -21,7 +21,7 @@
     "tags": ["transportation", "utility"]
   },
   {
-    "slug": "priya-patel",
+    "slug": "GA-05",
     "name": "Priya Patel",
     "appName": "MedMinder",
     "description": "Medication reminder app for elderly family members with simple large-button interface.",
@@ -31,7 +31,7 @@
     "tags": ["health", "accessibility"]
   },
   {
-    "slug": "tyler-jackson",
+    "slug": "IL-07",
     "name": "Tyler Jackson",
     "appName": "HoopStats",
     "description": "Track your basketball stats and compare with friends in real time.",
@@ -41,7 +41,7 @@
     "tags": ["sports", "social"]
   },
   {
-    "slug": "sofia-rodriguez",
+    "slug": "TX-18",
     "name": "Sofia Rodriguez",
     "appName": "LinguaFlip",
     "description": "Flashcard app that uses AI to generate practice sentences in any language you're learning.",
@@ -51,7 +51,7 @@
     "tags": ["education", "languages"]
   },
   {
-    "slug": "aiden-murphy",
+    "slug": "MA-07",
     "name": "Aiden Murphy",
     "appName": "PotholeAlert",
     "description": "Report potholes in your city with a photo and GPS location, sent straight to local government.",
@@ -61,7 +61,7 @@
     "tags": ["civic", "infrastructure"]
   },
   {
-    "slug": "zoe-kim",
+    "slug": "WA-07",
     "name": "Zoe Kim",
     "appName": "PlantPal",
     "description": "Identify plants by taking a photo and get care instructions instantly.",
@@ -71,7 +71,7 @@
     "tags": ["nature", "AI"]
   },
   {
-    "slug": "derek-williams",
+    "slug": "CO-01",
     "name": "Derek Williams",
     "appName": "StudyBuddy",
     "description": "Match with classmates to form study groups based on your schedule and subjects.",
@@ -81,7 +81,7 @@
     "tags": ["education", "social"]
   },
   {
-    "slug": "mia-johnson",
+    "slug": "TN-05",
     "name": "Mia Johnson",
     "appName": "SafeWalk",
     "description": "Share your live location with trusted contacts when walking alone at night.",
@@ -91,7 +91,7 @@
     "tags": ["safety", "utility"]
   },
   {
-    "slug": "noah-garcia",
+    "slug": "NM-01",
     "name": "Noah Garcia",
     "appName": "FridgeChef",
     "description": "Snap a photo of your fridge and get recipe suggestions from what you already have.",
@@ -101,7 +101,7 @@
     "tags": ["food", "AI"]
   },
   {
-    "slug": "emma-larsson",
+    "slug": "MN-05",
     "name": "Emma Larsson",
     "appName": "VolunteerHub",
     "description": "Find and sign up for volunteer opportunities in your neighborhood.",
@@ -111,7 +111,7 @@
     "tags": ["civic", "community"]
   },
   {
-    "slug": "jordan-brooks",
+    "slug": "AZ-03",
     "name": "Jordan Brooks",
     "appName": "BeatDrop",
     "description": "Make beats on your phone and share them with a community of teen producers.",
@@ -121,7 +121,7 @@
     "tags": ["music", "creative"]
   },
   {
-    "slug": "lily-tran",
+    "slug": "CA-51",
     "name": "Lily Tran",
     "appName": "DoodleShare",
     "description": "A collaborative drawing app where friends can doodle on the same canvas in real time.",
@@ -131,7 +131,7 @@
     "tags": ["art", "social"]
   },
   {
-    "slug": "caleb-wright",
+    "slug": "UT-02",
     "name": "Caleb Wright",
     "appName": "TrailFinder",
     "description": "Discover hiking trails near you with difficulty ratings, photos, and live conditions.",
@@ -141,7 +141,7 @@
     "tags": ["outdoors", "health"]
   },
   {
-    "slug": "ava-mitchell",
+    "slug": "NC-12",
     "name": "Ava Mitchell",
     "appName": "MoodLog",
     "description": "Track your mood daily and see patterns over time with colorful charts.",
@@ -151,7 +151,7 @@
     "tags": ["health", "wellness"]
   },
   {
-    "slug": "ryan-oconnor",
+    "slug": "NY-10",
     "name": "Ryan O'Connor",
     "appName": "ParkSpot",
     "description": "Crowdsourced parking availability so you never circle the block again.",
@@ -161,7 +161,7 @@
     "tags": ["transportation", "utility"]
   },
   {
-    "slug": "hannah-lee",
+    "slug": "OR-03",
     "name": "Hannah Lee",
     "appName": "BookSwap",
     "description": "Trade books with other students at your school instead of buying new ones.",
@@ -171,7 +171,7 @@
     "tags": ["education", "sustainability"]
   },
   {
-    "slug": "elijah-foster",
+    "slug": "TX-21",
     "name": "Elijah Foster",
     "appName": "FixItUp",
     "description": "Step-by-step repair guides for common household items to reduce waste.",
@@ -181,7 +181,7 @@
     "tags": ["sustainability", "DIY"]
   },
   {
-    "slug": "chloe-bennett",
+    "slug": "NV-01",
     "name": "Chloe Bennett",
     "appName": "StarGazer",
     "description": "Point your phone at the sky and identify constellations, planets, and satellites.",
@@ -191,7 +191,7 @@
     "tags": ["science", "education"]
   },
   {
-    "slug": "sam-nakamura",
+    "slug": "HI-01",
     "name": "Sam Nakamura",
     "appName": "CodeCoach",
     "description": "An AI tutor that helps beginners debug their code with friendly explanations.",
@@ -201,7 +201,7 @@
     "tags": ["education", "coding"]
   },
   {
-    "slug": "olivia-martinez",
+    "slug": "FL-27",
     "name": "Olivia Martinez",
     "appName": "PetWatch",
     "description": "Connect lost pets with their owners through community alerts and photo matching.",

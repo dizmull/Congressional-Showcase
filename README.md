@@ -2,119 +2,117 @@
 
 A showcase of apps built by high schoolers for the [Congressional App Challenge](https://www.congressionalappchallenge.us/), powered by [Hack Club](https://hackclub.com).
 
-Each participant gets their own custom HTML page to show off who they are, what they built, and a demo of their app. All pages are connected through a landing page with an interactive map and keyboard navigation.
+Each participant gets their own page to show off who they are, what they built, and a demo of their app. All pages are connected through a landing page with an interactive map.
 
 ## Add Your Project
 
-Participated in the Congressional App Challenge? Add your page to the showcase!
+Participated in the Congressional App Challenge? Add your page to the showcase! There are two ways to do it — pick whichever you're most comfortable with.
 
-### Step 1: Fork & Clone
+---
 
-```bash
-# Fork this repo on GitHub, then:
-git clone https://github.com/YOUR_USERNAME/Congressional-Showcase.git
-cd Congressional-Showcase
-```
+### Option A: Submit a Form (No Coding Required)
 
-### Step 2: Create Your Page
+If you've never used GitHub before, or just want the easiest path, this is for you.
 
-Copy the template folder to a new folder under `sites/`:
+1. **Create a free GitHub account** at [github.com](https://github.com) (if you don't have one already)
+2. **Go to the [Issues tab](../../issues)** at the top of this page
+3. **Click "New Issue"** and choose **"Add My Project"**
+4. **Fill out the form** with your name, app info, demo video, and location
+5. **Click "Submit"** — that's it!
 
-```bash
-cp -r template sites/your-name
-```
+A maintainer will create your showcase page and let you know when it's live.
 
-Use **lowercase letters and hyphens** for your folder name (e.g., `jane-doe`, `alex-kim`).
+---
 
-### Step 3: Customize Your Page
+### Option B: Build Your Own Page
 
-Open `sites/your-name/index.html` and fill in all the `TODO` sections:
+Want more control over your page? You can create and customize it yourself — all from your browser, no terminal or downloads needed.
 
-- Your name and bio
-- Your app name and description
-- Your demo video (YouTube/Vimeo embed)
-- Any relevant links
+#### Step 1: Fork This Repo (Make Your Own Copy)
 
-Make it yours — change colors, fonts, layout, add images. The only rules:
+Click the **"Fork"** button in the top-right corner of this page. This creates a copy of the project under your GitHub account that you can freely edit.
 
-- **Keep** the `<link>` to `../../assets/css/shared.css`
-- **Keep** the `<script>` tag for `../../assets/js/nav.js` at the bottom
-- **Don't commit video files** — use YouTube or Vimeo embeds instead
+#### Step 2: Create Your Page File
 
-### Step 4: Add Your Entry to projects.json
+1. In your fork, click on the **`sites`** folder
+2. Click **"Add file"** > **"Create new file"**
+3. In the filename box at the top, type: `XX-00/index.html` where `XX-00` is your congressional district
+   - Use your **state abbreviation and district number** (e.g., `CA-12/index.html`, `NY-10/index.html`)
+   - Find your district at [house.gov](https://www.house.gov/representatives/find-your-representative)
+   - GitHub will automatically create the folder for you
+4. Open the [template file](template/index.html) in a new tab, click **"Raw"**, and copy everything
+5. Paste it into your new file
 
-Open `projects.json` in the repo root and add your entry **at the end of the array** (before the closing `]`):
+#### Step 3: Customize Your Page
+
+Edit the file you just created. Look for all the lines that say `TODO` and replace them with your own info:
+
+- **Your name** and a short bio
+- **Your app name** and what it does
+- **Your demo video** — replace `YOUR_VIDEO_ID` with your YouTube video ID
+  (If your video URL is `https://www.youtube.com/watch?v=abc123`, the ID is `abc123`)
+- **Your links** — GitHub repo, live app, etc.
+
+Feel free to change the colors, fonts, and layout too — make it yours! Just **don't remove** the two lines near the top and bottom that load `shared.css` and `nav.js` (they make the navigation work).
+
+When you're done, scroll down and click **"Commit new file"**.
+
+#### Step 4: Add Yourself to the Project List
+
+1. Go back to the main page of your fork
+2. Click on **`projects.json`**
+3. Click the **pencil icon** (edit) in the top-right of the file
+4. Scroll to the very end of the file. Just **before** the last `]`, add a comma after the previous `}` and paste this block:
 
 ```json
 {
-  "slug": "your-name",
+  "slug": "XX-00",
   "name": "Your Full Name",
   "appName": "Your App Name",
   "description": "A one-sentence description of your app.",
-  "thumbnail": "sites/your-name/thumbnail.png",
+  "thumbnail": "sites/XX-00/thumbnail.png",
   "location": {
     "lat": 40.7128,
     "lng": -74.0060,
     "label": "New York, NY"
   },
-  "district": "NY-10",
-  "state": "NY",
+  "district": "XX-00",
+  "state": "XX",
   "tags": ["category1", "category2"]
 }
 ```
 
-**Field guide:**
-| Field | Required | Description |
-|-------|----------|-------------|
-| `slug` | Yes | Must match your folder name under `sites/` |
-| `name` | Yes | Your full name |
-| `appName` | Yes | The name of your app |
-| `description` | Yes | One sentence about your app |
-| `thumbnail` | No | Path to a 600x400 image (PNG or JPG) |
-| `location.lat` | Yes | Latitude of your city ([find it here](https://www.latlong.net/)) |
-| `location.lng` | Yes | Longitude of your city |
-| `location.label` | Yes | City and state (e.g., "Austin, TX") |
-| `district` | No | Your congressional district (e.g., "CA-12") |
-| `state` | No | Two-letter state code |
-| `tags` | No | Categories for your app |
+5. Replace the placeholder values with your actual info:
+   - **`XX-00`** — your congressional district (e.g., `CA-12`). Must match the folder name you created in Step 2.
+   - **`state`** — your two-letter state code (e.g., `CA`)
+   - **`lat` and `lng`** — your city's coordinates (look them up at [latlong.net](https://www.latlong.net/))
+   - **`tags`** — categories like `"education"`, `"health"`, `"environment"`, etc.
 
-### Step 5: Test Locally
+6. Click **"Commit changes"**
 
-Start a local server from the repo root:
+#### Step 5: Submit a Pull Request
 
-```bash
-npx serve .
-```
+1. Go back to the main page of your fork
+2. You should see a banner that says your branch is ahead — click **"Contribute"** > **"Open pull request"**
+3. Give your PR the title: **Add [Your Name] - [App Name]**
+4. Click **"Create pull request"**
 
-Then check:
-- [ ] Your page loads at `http://localhost:3000/sites/your-name/`
-- [ ] Your location shows on the map
-- [ ] Arrow key navigation works on your page
-- [ ] The "Back to Showcase" link works
+A maintainer will review your page, check that everything works, and merge it in!
 
-### Step 6: Submit a Pull Request
-
-```bash
-git add sites/your-name/ projects.json
-git commit -m "Add Your Name - App Name"
-git push origin main
-```
-
-Then open a pull request on GitHub with the title: **Add [Your Name] - [App Name]**
+---
 
 ## Guidelines
 
-- Only add/edit files in your own `sites/your-name/` folder
-- Don't modify shared assets, other people's pages, or `index.html`
-- Keep your total file size under 5MB (use external video hosting)
-- Make sure your `projects.json` entry is valid JSON (no trailing commas!)
+- Only add or edit files in your own `sites/XX-00/` folder (where `XX-00` is your district)
+- Don't modify shared files, other people's pages, or the main `index.html`
+- Keep your total file size under 5MB (use YouTube/Vimeo for videos)
 - Be creative with your page — that's the whole point!
 
 ## Need Help?
 
-- Check out the [example page](sites/jane-doe/) for reference
+- Check out the [example page](sites/example/) to see what a finished page looks like
 - Look at the [template README](template/README.md) for customization tips
-- Open an issue if you're stuck
+- [Open a help request](../../issues/new?template=get-help.yml) if you're stuck — no question is too small!
 
 ## License
 

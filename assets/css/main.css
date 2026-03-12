@@ -1,26 +1,23 @@
-/* Hack Club Congressional App Challenge Showcase — Main Styles */
+/* Congressional App Challenge — House of Code Showcase Styles */
 
 :root {
-  --hc-red: #ec3750;
-  --hc-orange: #ff8c37;
-  --hc-yellow: #f1c40f;
-  --hc-green: #33d6a6;
-  --hc-cyan: #5bc0de;
-  --hc-blue: #338eda;
-  --hc-purple: #a633d6;
-  --hc-white: #ffffff;
-  --hc-snow: #f9fafc;
-  --hc-smoke: #e0e6ed;
-  --hc-muted: #8492a6;
-  --hc-slate: #3c4858;
-  --hc-dark: #1f2d3d;
-  --hc-darker: #121217;
+  --cac-navy: #000f63;
+  --cac-red: #a53535;
+  --cac-blue: #4560b3;
+  --cac-white: #ffffff;
+  --cac-snow: #f4f5fa;
+  --cac-smoke: #d8dce8;
+  --cac-muted: #6b7394;
+  --cac-slate: #2e3555;
+  --cac-dark: #000f63;
+  --cac-darker: #000a42;
 
-  --font-body: 'Phantom Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Oswald', 'Arial Narrow', sans-serif;
+  --font-body: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 
-  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --shadow: 0 4px 12px rgba(0, 15, 99, 0.1);
+  --shadow-lg: 0 8px 24px rgba(0, 15, 99, 0.15);
   --transition: 0.2s ease;
 }
 
@@ -38,10 +35,10 @@ html {
 
 body {
   font-family: var(--font-body);
-  color: var(--hc-dark);
+  color: var(--cac-slate);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--hc-snow);
+  background-color: var(--cac-snow);
   background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   background-size: 200px 200px;
@@ -49,7 +46,7 @@ body {
 }
 
 a {
-  color: var(--hc-blue);
+  color: var(--cac-blue);
   text-decoration: none;
 }
 
@@ -62,46 +59,51 @@ img {
   height: auto;
 }
 
-/* Hero — compact banner with CTA */
+/* Hero — light background so dark navy logo pops */
 .hero {
-  color: var(--hc-white);
+  color: var(--cac-navy);
   text-align: center;
   padding: 3rem 2rem 2.5rem;
   position: relative;
-  background:
-    repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 10px,
-      rgba(255,255,255,0.03) 10px,
-      rgba(255,255,255,0.03) 20px
-    ),
-    linear-gradient(135deg, var(--hc-red), var(--hc-orange));
+  background: var(--cac-white);
+  border-bottom: 4px solid var(--cac-red);
 }
 
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(0,0,0,0.1) 0%, transparent 50%);
-  pointer-events: none;
+.hero-logo {
+  height: 90px;
+  width: auto;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
+  font-family: var(--font-heading);
   font-size: clamp(1.8rem, 4vw, 3rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--cac-navy);
+  position: relative;
+  z-index: 1;
+}
+
+.hero .tagline {
+  font-family: var(--font-heading);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cac-red);
+  margin: 0.25rem auto 0;
   position: relative;
   z-index: 1;
 }
 
 .hero p {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  opacity: 0.9;
   max-width: 600px;
   margin: 0 auto;
   position: relative;
@@ -111,7 +113,7 @@ img {
 .hero .subtitle {
   margin-top: 0.25rem;
   font-size: 0.95rem;
-  opacity: 0.75;
+  color: var(--cac-muted);
 }
 
 .hero-actions {
@@ -128,51 +130,67 @@ img {
   display: inline-block;
   padding: 0.6rem 1.8rem;
   cursor: pointer;
-  background: rgba(255,255,255,0.15);
-  color: var(--hc-white);
-  font-weight: 700;
+  background: var(--cac-red);
+  color: var(--cac-white);
+  font-family: var(--font-heading);
+  font-weight: 600;
   font-size: 0.95rem;
-  border: 2px solid rgba(255,255,255,0.4);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: 2px solid var(--cac-red);
   transition: background var(--transition), border-color var(--transition);
   position: relative;
   z-index: 1;
 }
 
 .hero-btn:hover {
-  background: rgba(255,255,255,0.25);
-  border-color: rgba(255,255,255,0.7);
+  background: #c24040;
+  border-color: #c24040;
   text-decoration: none;
 }
 
-/* Map */
+/* Map section — navy header bar + branded container */
 #map {
-  padding: 3rem 2rem;
+  padding: 0 2rem 3rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.map-header {
+  background: var(--cac-navy);
+  color: var(--cac-white);
+  text-align: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 #map-container {
   width: 100%;
   height: 600px;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--hc-smoke);
+  box-shadow: var(--shadow-lg);
+  border: 3px solid var(--cac-navy);
+  border-top: none;
 }
 
-/* Footer */
+/* Footer — navy background */
 footer {
   text-align: center;
   padding: 1.5rem 2rem;
-  color: var(--hc-muted);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 0.85rem;
-  border-top: 1px solid var(--hc-smoke);
-  background:
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 3px,
-      rgba(0,0,0,0.015) 3px,
-      rgba(0,0,0,0.015) 4px
-    );
+  background: var(--cac-navy);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+footer a:hover {
+  color: var(--cac-white);
 }
 
 footer kbd {
@@ -180,8 +198,9 @@ footer kbd {
   padding: 0.15em 0.5em;
   font-family: var(--font-mono);
   font-size: 0.85em;
-  background: var(--hc-smoke);
-  border: 1px solid #ccd3db;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--cac-white);
 }
 
 /* Responsive */
@@ -191,7 +210,7 @@ footer kbd {
   }
 
   #map {
-    padding: 2rem 1rem;
+    padding: 0 1rem 2rem;
   }
 
   #map-container {

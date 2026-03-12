@@ -10,10 +10,10 @@
     maxZoom: 18
   }).addTo(map);
 
-  // Custom marker icon — Hack Club red circle
+  // Custom marker icon — CAC navy circle
   var markerIcon = L.divIcon({
     className: 'custom-marker',
-    html: '<div style="width:14px;height:14px;background:#ec3750;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>',
+    html: '<div style="width:14px;height:14px;background:#000f63;border:2px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,0.3);"></div>',
     iconSize: [14, 14],
     iconAnchor: [7, 7],
     popupAnchor: [0, -10]
@@ -50,7 +50,7 @@
         link.style.display = 'block';
         link.style.marginTop = '0.4em';
         link.style.fontWeight = '600';
-        link.style.color = '#ec3750';
+        link.style.color = '#a53535';
 
         popupContent.appendChild(nameEl);
         if (project.appName) popupContent.appendChild(appEl);

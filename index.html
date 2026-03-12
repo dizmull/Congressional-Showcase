@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Congressional App Challenge Showcase | Hack Club</title>
-  <meta name="description" content="A showcase of apps built by high schoolers for the Congressional App Challenge, powered by Hack Club.">
+  <title>Congressional App Challenge Showcase | #HouseOfCode</title>
+  <meta name="description" content="A showcase of apps built by high schoolers for the Congressional App Challenge — #HouseOfCode">
   <meta property="og:title" content="Congressional App Challenge Showcase">
   <meta property="og:description" content="Browse projects from across the country.">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
   <header class="hero">
+    <img src="https://cdn.hackclub.com/019ce382-fe8e-7efa-a987-b937435e489b/logolight-vector.svg" alt="Congressional App Challenge" class="hero-logo">
     <h1>Congressional App Challenge Showcase</h1>
+    <p class="tagline">#HouseOfCode</p>
     <p class="subtitle">Click a pin on the map to explore a project</p>
     <div class="hero-actions">
       <a href="https://github.com/hackclub/Congressional-Showcase/blob/main/README.md#add-your-project" class="hero-btn">Add Your Project</a>
@@ -21,13 +26,14 @@
     </div>
   </header>
 
+  <div class="map-header">Explore Projects Across the Country</div>
   <section id="map">
     <div id="map-container"></div>
   </section>
 
   <footer>
     <p>Use <kbd>&larr;</kbd> <kbd>&rarr;</kbd> arrow keys to browse projects. Press <kbd>Esc</kbd> to return here.</p>
-    <p>Built with <span style="color: var(--hc-red)">&hearts;</span> by <a href="https://github.com/claynicholson">Clay Nicholson</a></p>
+    <p>Built with <span style="color: #e05555">&hearts;</span> by <a href="https://github.com/claynicholson">Clay Nicholson</a></p>
     <p>follow me for a cookie</p>
   </footer>
 
