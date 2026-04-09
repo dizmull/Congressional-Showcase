@@ -403,5 +403,20 @@
   "district": "OR-01",
   "state": "OR",
   "tags": ["education", "ai"]
+},
+  {
+  "slug": "NJ-06",
+  "name": "Eric Dai and Vaibhav Sitaraman",
+  "appName": "RoadWatch",
+  "description": "RoadWatch is a software and hardware ecosystem that uses dashcam footage to automatically detect road anomalies and report them to the government to improve road maintenance.",
+  "thumbnail": "sites/NJ-06/thumbnail.png",
+  "location": {
+    "lat": 40.5169,
+    "lng": -74.4063,
+    "label": "Edison, NJ"
+  },
+  "district": "NJ-06",
+  "state": "NJ",
+  "tags": ["ai", "community"]
 }
 ]
