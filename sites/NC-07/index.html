@@ -145,9 +145,14 @@ Copied from: Editing Congressional-Showcase/sites/NC-07/index.html at main · ed
       </div>
     <section>
       <!-- TODO: Tell us about your app -->
-      <h2>Your App Name</h2>
-      <p>Describe your app. What does it do? Who is it for? What problem does it solve?</p>
-      <p>What technologies did you use to build it?</p>
+      <h2>Remember When</h2>
+      <p>Remember When addresses an evergrowing problem with our aging community by providing companionship and comfort to the elderly. Our app starts a conversation with the User, and continuously prompts him or her to keep talking, guiding the User in the right direction, and documenting everything. Remember When is great for people who are lonely or who are suffering from memory loss by providing a source of stimulation and interaction. To use the app, the User simply presses the button in the center of the homepage and begins talking. The app listens for the User to finish talking, saves the recorded audio and text files, records new details about people the User has identified, and verbally prompts the User to keep the conversation going. All the information Remember When records can be accessed in several tabs: "The Record" tab keeps a library of all recorded audio files, preserving the User's voice and allowing it to be heard forever; "The Journal" tab keeps a written transcript of every story told by the User, creating a book of memories; and the "Family Tree" tab keeps detailed bios of every person the User mentioned as part of his or her life.
+
+Remember when is not only a great companion for the elderly, but it is also an amazing tool for their loved ones who want to have a record of their stories forever.
+
+<p>
+      <p>Our code integrates with OpenAI’s API in order to create a human-like companion. Our code records the User’s voice, stopping when it detects the User not talking. It takes that audio file and uses OpenAI’s Whisper to transcribe the audio into text which our code appends to “The Journal” tab. The text file is also used alongside stored relevant information to use OpenAI’s gpt-4o to generate a response. The response includes information about any people the User mentioned, which updates the “Family Tree” tab. The response is then fed through OpenAI’s tts-1 model to create an audio file, which our code plays aloud to the User. When the User clicks on either the “Family Tree” or “The Journal” tabs, OpenAI’s gpt-3.5-turbo combs through the text files, formatting and removing filler words and redundancies based on our coded instructions.
+</p>
     </section>
 
     <section class="video">
