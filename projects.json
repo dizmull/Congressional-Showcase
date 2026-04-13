@@ -628,5 +628,35 @@
   "district": "NC-07",
   "state": "NC",
   "tags": ["accessibility", "ai"]
+},
+{
+  "slug": "ND-00",
+  "name": "Che Yu",
+  "appName": "WaterWise",
+  "description": "WaterWise provides a tool that forecasts soil moisture, enabling proactive crop protection and more efficient irrigation practices.",
+  "thumbnail": "sites/ND-00/thumbnail.jpg",
+  "location": {
+    "lat": 47.9253,
+    "lng": -97.0329,
+    "label": "Grand Forks, ND"
+  },
+  "district": "ND-00",
+  "state": "ND",
+  "tags": ["weather", "agriculture"]
+},
+{
+  "slug": "CA-07",
+  "name": "Omar Ahmad & Preston Chang",
+  "appName": "RecycleRightCA",
+  "description": "RecycleRightCA uses intelligent scanning to identify your waste and awards you points for making the right choice.",
+  "thumbnail": "sites/CA-07/thumbnail.png",
+  "location": {
+    "lat": 38.3882,
+    "lng": -121.4354,
+    "label": "Elk Grove, CA"
+  },
+  "district": "CA-07",
+  "state": "CA",
+  "tags": ["environment", "ai"]
 }
 ]
